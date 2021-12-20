@@ -25,7 +25,7 @@ function App({youtube}) {
             youtube
             .mostPopular()
             .then(videos => setvideos(videos));
-    }, [])
+    }, [youtube])
     return (
         <div className={styles.app}>
             <Search_header onSearch={search}/>
